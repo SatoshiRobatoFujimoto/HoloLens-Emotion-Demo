@@ -1,0 +1,4 @@
+E:\work\unity-emotion-demo\App\face-emotion-hololens-demo\face-emotion-hololens-demo.csproj;x86
+E:\work\unity-emotion-demo\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+E:\work\unity-emotion-demo\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+E:\work\unity-emotion-demo\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
