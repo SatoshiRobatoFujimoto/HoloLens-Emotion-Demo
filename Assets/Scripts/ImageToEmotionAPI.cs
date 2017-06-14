@@ -10,22 +10,22 @@ using UnityEngine.UI;
 public class ImageToEmotionAPI : MonoBehaviour, IInputClickHandler
 {
 
-    string EMOTIONKEY = "2ef2694581074474a5e068000ae3cfac"; // replace with your Emotion API Key
+    string EMOTIONKEY = "EMOTIONKEY"; // replace with your Emotion API Key
 
     string emotionURL = "https://api.projectoxford.ai/emotion/v1.0/recognize";
 
     public string fileName { get; private set; }
     string responseData;
 
-    private ShowImageOnPanel panel; //mori
-    public Text text; //mori
+    private ShowImageOnPanel panel; //サンプルに対して追加
+    public Text text;               //サンプルに対して追加
 
     // Use this for initialization
     void Start () {
 	    fileName = Path.Combine(Application.streamingAssetsPath, "myphoto.jpeg"); // Replace with your file
 
-        InputManager.Instance.PushFallbackInputHandler(gameObject); //mori
-        panel = gameObject.GetComponent<ShowImageOnPanel>(); //mori
+        InputManager.Instance.PushFallbackInputHandler(gameObject); //サンプルに対して追加
+        panel = gameObject.GetComponent<ShowImageOnPanel>();        //サンプルに対して追加
     }
 	
 	// Update is called once per frame
@@ -62,9 +62,9 @@ public class ImageToEmotionAPI : MonoBehaviour, IInputClickHandler
         text.text = responseData; //mori
     }
 
-    public void OnInputClicked(InputEventData eventData) //mori
+    public void OnInputClicked(InputEventData eventData) //サンプルに対して追加
     {
-        panel.DisplayImage(); //無理やり写真を読む
+        panel.DisplayImage();
 
         StartCoroutine(GetEmotionFromImages());
 

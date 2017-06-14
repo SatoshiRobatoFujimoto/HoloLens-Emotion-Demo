@@ -16,8 +16,8 @@ public static partial class JSONTemplates {
 		if(touched.Add(obj)) {
 			JSONObject result = JSONObject.obj;
 			//Fields
-			FieldInfo[] fieldinfo = (FieldInfo[])obj.GetType().GetFields(); //mori
-			foreach(FieldInfo fi in fieldinfo) {
+			FieldInfo[] fieldinfo = (FieldInfo[])obj.GetType().GetFields(); //ÉTÉìÉvÉãÇ…ëŒÇµÇƒèCê≥
+            foreach (FieldInfo fi in fieldinfo) {
 				JSONObject val = JSONObject.nullJO;
 				if(!fi.GetValue(obj).Equals(null)) {
 					MethodInfo info = typeof(JSONTemplates).GetMethod("From" + fi.FieldType.Name);

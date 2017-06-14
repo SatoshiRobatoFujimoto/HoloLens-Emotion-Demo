@@ -21,7 +21,7 @@ public class ShowImageOnPanel : MonoBehaviour {
         }
 	} 
 
-    public void DisplayImage() //mori
+    public void DisplayImage() //サンプルに対して修正
     {
         Texture2D imageTxtr = new Texture2D(2, 2);
         string fileName = gameObject.GetComponent<ImageToEmotionAPI>().fileName;
